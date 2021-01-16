@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.cqu.demo.dao.ExcelDataMapper">
+        <insert id="insertlist">
+            insert into ${tableName} values
+            <foreach collection="list" separator="," item="item" index="index">
+                (#{item})
+            </foreach>
+        </insert>
+        <select id="gettablename" parameterType="hashmap" resultType="string">
+            select tablename from datamarylit where tableheadval=#{arrayList};
+        </select>
+        <update id="createtable" parameterType="string">
+            CREATE TABLE ${tableName} (filedarray blob);
+        </update>
+        <insert id="adddatalit">
+            INSERT INTO datamarylit values (#{tableName},#{size},#{datalist});
+        </insert>
+        <select id="getlimitdata" parameterType="int" resultType="_byte[]">
+            SELECT * from ${tablename} limit ${start},${end}
+        </select>
+        <select id="gettablename_nopar" resultType="string">
+            SELECT tablename from datamarylit;
+        </select>
+</mapper>

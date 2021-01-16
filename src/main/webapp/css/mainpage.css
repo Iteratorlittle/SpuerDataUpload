@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f1f1;
+}
+.NavBar{
+    width: 100%;
+    height: 60px;
+    min-width: 1200px;
+    background-color: #3a72dc;
+}
+.NavBar ul{
+    width: 230px;
+    height: 100%;
+    position: relative;
+    left: 20px;
+}
+.NavBar ul li{
+    height: 100%;
+    width: 100px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    display: inline-block;
+}
+.NavBar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.Pages{
+    width: 100%;
+    height: auto;
+}
+.Pages .from{
+    width: 500px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    top: 200px;
+}
+.Pages .from button{
+    width: 90%;
+    height: 35px;
+    border-radius: 30px;
+    text-align: center;
+    line-height: 35px;
+    color: white;
+    background-color: #3a72dc;
+    border: 0;
+    position: relative;
+    top: 20px;
+    left: 5%;
+}
+.Pages .from form{
+    width: 90%;
+    height: 125px;
+    position: relative;
+    left: 5%;
+    top: 30px;
+    border-bottom: 1px solid #e5e5e5;
+    overflow-y: scroll;
+}
+.Pages .from form .ui_button {
+    padding:10px;
+    background: #01AAED;
+    color: #fff;
+    border-radius: 30px;
+    display: inline-block;
+    position: relative;
+}
+.Pages .from form .ui_button:hover {
+    opacity: 0.9;
+}
+.Pages .from form .progressbox{
+    width: 100%;
+    height: 15px;
+    background-color: #dedede;
+    margin: 10px 0;
+    border-radius: 30px;
+    position: relative;
+}
+.Pages .from form .progressbox .progress{
+    width: 0;
+    height: 100%;
+    background-color: #3a72dc;
+}
+.Pages .from form .progressbox a{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 10px;
+    color: white;
+}
+.Pages .from textarea{
+    height: 100px;
+    display: block;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    top: 40px;
+    border: 1px solid #cecece;
+}
+.Pages .from a{
+    display: block;
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+    position: relative;
+    opacity: 0.6;
+    font-size: 13px;
+    width: 90%;
+    text-align: left;
+}
+.databox{
+    width: auto;
+    min-width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+    overflow-x: scroll;
+}
+.databox ul{
+    height: 50px;
+    width: auto;
+    border-bottom: 1px solid #efefef;
+    position: relative;
+    overflow-y: scroll;
+    transition: 1s;
+    overflow-x: hidden;
+}
+.databox ul::-webkit-scrollbar
+{
+    width: 16px;
+    height: 5px;
+    background-color: #F5F5F5;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.databox ul::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+.databox ul::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+.databox ul li{
+    width: 200px;
+    height: 100%;
+    border-left: 1px solid #c7c7c7;
+    display: inline-block;
+    line-height: 50px;
+    color: #656565;
+    padding: 0 5px;
+    float: left;
+}
+.databox #datashower{
+    width: auto;
+    height: auto;
+    background: none;
+    position: relative;
+    bottom: 0;
+}
+.databox div{
+    width: 100%;
+    text-align: center;
+    height: 20px;
+    background-color: #e8e8e8;
+    position: relative;
+    bottom: 0;
+}
+.databox div button{
+    border: 0;
+    height: 16px;
+    width: 400px;
+    background-color: #01AAED;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    line-height: 16px;
+}
